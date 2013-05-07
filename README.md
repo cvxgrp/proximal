@@ -63,25 +63,27 @@ ans =
 
 Evaluating the proximal operator of the nuclear norm:
 
-    >> m = 10;
-    >> n = 30;
-    >> lambda = 1;
-    >> 
-    >> V = randn(m,n);
-    >> 
-    >> % CVX baseline
-    >> cvx_begin quiet
-    >>   variable X(m,n)
-    >>   minimize(norm_nuc(X) + (1/(2*lambda))*square_pos(norm(X - V,'fro')))
-    >> cvx_end
-    >> 
-    >> % Custom method
-    >> X2 = prox_matrix(V, lambda, @prox_l1);
-    >> 
-    >> % Comparison
-    >> norm(X - X2)
-    ans =
-    1.9174e-05
+```matlab
+>> m = 10;
+>> n = 30;
+>> lambda = 1;
+>> 
+>> V = randn(m,n);
+>> 
+>> % CVX baseline
+>> cvx_begin quiet
+>>   variable X(m,n)
+>>   minimize(norm_nuc(X) + (1/(2*lambda))*square_pos(norm(X - V,'fro')))
+>> cvx_end
+>> 
+>> % Custom method
+>> X2 = prox_matrix(V, lambda, @prox_l1);
+>> 
+>> % Comparison
+>> norm(X - X2)
+ans =
+1.9174e-05
+```
 
 This second example shows a case where one of the arguments is a function
 handle to another proximal operator.
