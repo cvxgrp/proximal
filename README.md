@@ -40,24 +40,26 @@ The Matlab functions include the following examples:
 
 Evaluating the proximal operator of the *l1* norm via CVX and the function here:
 
-    >> n = 100;
-    >> lambda = 1;
-    >> 
-    >> v = randn(n,1);
-    >> 
-    >> % CVX baseline
-    >> cvx_begin quiet
-    >>   variable x(n)
-    >>   minimize(norm(x,1) + (1/(2*lambda))*sum_square(x - v))
-    >> cvx_end
-    >> 
-    >> % Custom method
-    >> x2 = prox_l1(v, lambda);
-    >> 
-    >> % Comparison
-    >> norm(x - x2)
-    ans =
-    7.7871e-05
+```matlab
+>> n = 100;
+>> lambda = 1;
+>> 
+>> v = randn(n,1);
+>> 
+>> % CVX baseline
+>> cvx_begin quiet
+>>   variable x(n)
+>>   minimize(norm(x,1) + (1/(2*lambda))*sum_square(x - v))
+>> cvx_end
+>> 
+>> % Custom method
+>> x2 = prox_l1(v, lambda);
+>> 
+>> % Comparison
+>> norm(x - x2)
+ans =
+7.7871e-05
+```
 
 Evaluating the proximal operator of the nuclear norm:
 
