@@ -17,25 +17,6 @@ substantially faster if it is used.
 
 The Matlab function `prox_cvx.m` requires [CVX](http://cvxr.com/cvx).
 
-## Proximal operators
-
-The Matlab functions include the following examples:
-
-* Projection onto an affine set
-* Projection onto a box
-* Projection onto the consensus set (*i.e.*, averaging)
-* Projection onto the exponential cone
-* Projection onto the nonnegative orthant
-* Projection onto the second-order cone
-* Projection onto the semidefinite cone
-* Proximal operator of a generic function (via CVX)
-* Proximal operator of the *l1* norm
-* Proximal operator of the max function
-* Proximal operator of a quadratic function
-* Proximal operator of a generic scalar function (vectorized)
-* Proximal operator of an orthogonally invariant matrix function
-* Precomposition of a proximal operator
-
 ## Examples
 
 Evaluating the proximal operator of the *l1* norm via CVX and the function here:
@@ -91,6 +72,25 @@ handle to another proximal operator.
 The other Matlab functions work similarly; just use `help` in Matlab.
 
 For a C example, see the file `example.c` in the C source directory.
+
+## Proximal operators
+
+The Matlab functions include the following examples:
+
+* Projection onto an affine set
+* Projection onto a box
+* Projection onto the consensus set (*i.e.*, averaging)
+* Projection onto the exponential cone
+* Projection onto the nonnegative orthant
+* Projection onto the second-order cone
+* Projection onto the semidefinite cone
+* Proximal operator of a generic function (via CVX)
+* Proximal operator of the *l1* norm
+* Proximal operator of the max function
+* Proximal operator of a quadratic function
+* Proximal operator of a generic scalar function (vectorized)
+* Proximal operator of an orthogonally invariant matrix function
+* Precomposition of a proximal operator
 
 ## Authors
 
