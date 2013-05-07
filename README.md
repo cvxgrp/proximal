@@ -1,4 +1,4 @@
-# Proximal
+# Proximal operators
 
 This "library" contains sample implementations of various proximal operators in
 Matlab. These implementations are intended to be pedagogical, not the most
