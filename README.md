@@ -79,7 +79,7 @@ The Matlab functions include the following examples:
 
 * Projection onto an affine set
 * Projection onto a box
-* Projection onto the consensus set (_i.e._, averaging)
+* Projection onto the consensus set (averaging)
 * Projection onto the exponential cone
 * Projection onto the nonnegative orthant
 * Projection onto the second-order cone
