@@ -98,6 +98,15 @@ The Matlab functions include the following examples:
 * [Eric Chu](http://www.stanford.edu/~echu508)
 * [Stephen Boyd](http://www.stanford.edu/~boyd)
 
+## Other libraries
+
+There are other libraries with implementations of proximal or projection
+operators that may be preferable or contain more examples:
+
+* [TFOCS](http://cvxr.com/tfocs/functions/) (see prox/proj sections) 
+by S. Becker, E. Candès, and M. Grant
+* [Python proximal operators](https://github.com/svaiter/pyprox) by S. Vaiter
+
 ## License
 
 This code is released under a BSD license; see the "LICENSE" file.
